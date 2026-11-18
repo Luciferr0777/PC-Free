@@ -18,14 +18,12 @@ services:
       - "8006:8006"
       - "3389:3389/tcp"
     volumes:
-      - /tmp/pcfree-share:/mnt/disco1
-      - /tmp/pcfree-storage:/storage
-      - windows-data:/mnt/windows-data
+      - /workspaces/.codespaces/shared/pcfree/share:/mnt/disco1
+      - /workspaces/.codespaces/shared/pcfree/storage:/storage
+      - /workspaces/.codespaces/shared/pcfree/windows-data:/mnt/windows-data
     # This Codespace exposes /dev/kvm, so hardware acceleration is enabled.
     devices:
       - "/dev/kvm:/dev/kvm"
     stop_grace_period: 2m
     restart: always
 
-volumes:
-  windows-data:
