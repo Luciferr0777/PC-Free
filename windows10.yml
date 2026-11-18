@@ -19,10 +19,9 @@ services:
     volumes:
       - /tmp/docker-data:/mnt/disco1
       - windows-data:/mnt/windows-data
-    # Codespaces has no /dev/kvm. With QEMU emulation the container still boots,
-    # just slowly. If your host does expose /dev/kvm, uncomment the two lines:
-    # devices:
-    #   - "/dev/kvm:/dev/kvm"
+    # This Codespace exposes /dev/kvm, so hardware acceleration is enabled.
+    devices:
+      - "/dev/kvm:/dev/kvm"
     stop_grace_period: 2m
     restart: always
 
