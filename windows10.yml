@@ -17,7 +17,8 @@ services:
       - "8006:8006"
       - "3389:3389/tcp"
     volumes:
-      - /tmp/docker-data:/mnt/disco1
+      - /tmp/pcfree-share:/mnt/disco1
+      - /tmp/pcfree-storage:/storage
       - windows-data:/mnt/windows-data
     # This Codespace exposes /dev/kvm, so hardware acceleration is enabled.
     devices:
