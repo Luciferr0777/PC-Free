@@ -11,6 +11,7 @@ services:
       RAM_SIZE: "6G"
       CPU_CORES: "2"
       DISK_SIZE: "32G"
+      MAC: "02:26:63:A6:37:4D"
     cap_add:
       - NET_ADMIN
     ports:
