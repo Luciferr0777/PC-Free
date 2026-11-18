@@ -34,7 +34,7 @@ Isliye Windows cloud desktop sirf GitHub Codespaces me banega.
 |---|---|---|
 | `RAM_SIZE` | `6G` | Windows 10 ka minimum |
 | `CPU_CORES` | `2` | Free Codespace 2-core |
-| `DISK_SIZE` | `64G` | Codespace storage 64G+ chahiye |
+| `DISK_SIZE` | `32G` | Docker root `/tmp/docker-data` (39G free) ke hisaab se |
 | `/dev/kvm` | enabled | Is Codespace me `/dev/kvm` maujood hai — hardware acceleration chalega |
 
 Agar slow ho to `RAM_SIZE: "4G"` try karo, par Windows 10 stable nahi chalega.
